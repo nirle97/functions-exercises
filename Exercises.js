@@ -1,7 +1,13 @@
 //Question 1
 function myReverse(str) {
-  // your code here
-  return "";
+  str = String(str);
+  str = str.split(''); 
+  result = [];
+  for (let i = str.length - 1; i >= 0; i--) {
+      result.push(str[i]);
+  }
+  result = result.join('');
+  return result;
 }
 
 //Question 2

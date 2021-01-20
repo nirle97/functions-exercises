@@ -9,13 +9,16 @@ function myReverse(str) {
   result = result.join('');
   return result;
 }
-
 //Question 2
 function allCombinations(str) {
   let combinations = [];
-  // your code here
-
-  //
+  for (let i = 0; i < str.length; i++) {
+    for (let n = i; n <= str.length; n++) {
+        if (n !== i) {
+          combinations.push(str.slice(i, n));
+        }
+    }
+  }
   return combinations;
 }
 

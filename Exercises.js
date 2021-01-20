@@ -34,8 +34,9 @@ function allCaps(str) {
 
 //Question 4
 function myPower(x, n) {
-  // your code here
-  return "";
+  x = Number(x);
+  n = Number(n);
+  return x**n;
 }
 
 //Question 5

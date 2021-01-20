@@ -41,8 +41,16 @@ function myPower(x, n) {
 
 //Question 5
 function getFirstNotRepeating(str) {
-  // your code here
-  return "";
+  str = str.split("");
+  const afterFilter = str.filter((item, index) => str.indexOf(item) !== index);
+  let result = '';
+  for (char of str) {
+      if (!(afterFilter.includes(char))) {
+          result += char;
+          break;
+      }
+  }
+  return result;
 }
 
 //Question 6 (Bonus)
